@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    section.sticky {
+      position: sticky;
+      top: 0;
+      padding: 2px;
+      background-color: #cae8ca;
+      border: 2px solid #3789e7;
+    }
+</style>
+<body>
+    <header>
+        <h1>Online Bookstore</h1>
+    </header>
+    <section id="filter", class="sticky">
+        <h2>Filter by Genre</h2>
+        <select id="genre">
+            <option value="all-genres">All Genres</option>
+            <option value="fiction">- - - FICTION - - -</option>
+                <ul class="sub-genres">
+                    <option value="action-adventure">Action & Adventure</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="graphic-novel">Graphic Novel</option>
+                    <option value="historical-fiction">Historical Fiction</option>
+                    <option value="horror">Horror</option>
+                    <option value="lgbtqia+">LGBTQIA+</option>
+                    <option value="literary-fiction">Literary Fiction</option>
+                    <option value="mystery-thriller-suspense">Mystery, Thriller, Suspense</option>
+                    <option value="romance">Romance</option>
+                    <option value="science-fiction">Science Fiction</option>    
+                    <option value="western">Western</option>         
+                    <option value="womens-fiction">Women's Fiction</option>        
+                    <option value="young-adult">Young Adult</option>
+                </ul>     
+            <option value="Nonfiction">- - - NONFICTION - - -</option>
+                <ul class="sub-genres">
+                    <option value="art-photography">Art & Photography</option>
+                    <option value="Biography">Biography</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="crafts">Crafts</option>
+                    <option value="essays">Essays</option>
+                    <option value="food-drink">Food & Drink</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="health-fitness">Health & Fitness</option>
+                    <option value="history">History</option>
+                    <option value="how-to">How-To</option>
+                    <option value="humanities-social-sciences">Humanities & Social Sciences</option>
+                    <option value="memoir-autobiography">Memoir & Autobiography</option>
+                    <option value="parenting-families">Parenting & Families</option>
+                    <option value="pets">Pets</option>
+                    <option value="religion-spirituality">Religion & Spirituality</option>
+                    <option value="self-help">Self-Help</option>
+                    <option value="science-technology">Science & Technology</option>     
+                    <option value="travel">Travel</option>
+                    <option value="true-crime">True Crime</option>
+                </ul>   
+        </select>        
+    </section>
+
+    <section id="book-choice">
+        <div class="book">
+            <p><strong>ACTION & ADVENTURE</strong></p>
+            <br>
+            <img src="Fiction-A&T.jpg" alt="Jurassic Park by Michael Crichton">
+            <div class="book-info">
+                <h3 class="book-title">Jurassic Park</h3>
+                <p>Author: Michael Crichton</p>
+                <hr>
+                <p class="critic-quote">A cautionary tale about genetic engineering, it presents the collapse of a zoological park showcasing genetically recreated dinosaurs to illustrate the mathematical concept of chaos theory and its real-world implications.</p>
+                    <div>
+                        <p class="critic"> - Wikipedia</p>
+                    </div>
+                    <br>
+                    <hr>
+                <p><span class="sale">$8.99</span> <span class="sale-text">On Sale for $3.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <br>
+        <div class="book">
+            <p><strong>FANTASY</strong></p>
+            <br>
+            <img src="Fiction-fantasy.jpg" alt="The Fifth Season by N.K. Jemisin">
+            <div class="book-info">
+                <h3 class="book-title">The Fifth Season</h3>
+                <p>Author: N. K. Jemisin</p>
+                <hr>
+                <p class="critic-quote">"N. K. Jemisin’s Broken Earth trilogy is the most lauded fantasy series of its generation, including a record-breaking three Hugo Awards for Best Novel three years in a row."</p>
+                    <div>
+                        <p class="critic"> - Adam Morgan is a literary critic and the founder of the Chicago Review of Books, Southern Review of Books, and Chicago Literary Archive. </p>
+                    </div>
+                    <br>
+                    <hr>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $4.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <br>
+        <div class="book">
+            <p><strong>GRAPHIC NOVEL</strong></p>
+            <br>
+            <img src="Fiction-graphic-novel.jpg" alt="Watchmen by Alan Moore">
+            <div class="book-info">
+                <h3 class="book-title">Watchmen</h3>
+                <p>Author: Alan Moore</p>
+                <hr>
+                <p class="critic-quote">"One of the most influential graphic novels of all time and a perennial best-seller, Watchmen has been studied on college campuses across the nation and is considered a gateway title" </p>
+                    <div>
+                        <p class="critic"> - Goodreads</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$25.49</span> <span class="sale-text">On Sale for $19.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>HISTORICAL FICTION</strong></p>
+            <br>
+            <img src="Fiction-historical-fiction.jpg" alt="The Help by Kathryn Stockett">
+            <div class="book-info">
+                <h3 class="book-title">The Help</h3>
+                <p>Author: Kathryn Stockett</p>
+                <hr>
+                <p class="critic-quote">The #1 New York Times bestselling novel and basis for the Academy Award-winning film--a timeless and universal story about the lines we abide by, and the ones we don't--nominated as one of America's best-loved novels by PBS's The Great American Read.</p>
+                    <div>
+                        <p class="critic"> - Target.com</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>HORROR</strong></p>
+            <br>
+                <img src="Fiction-horror.jpg" alt="Salem's Lot by Stephen King">
+            <div class="book-info">
+                <h3 class="book-title">Salem's Lot</h3>
+                <p>Author: Stephen King</p>
+                <hr>
+                <p class="critic-quote">"Spook-tacular, Fang-tastic and 4 ‘bloodthirsty’ stars for a book by an author that needs no introduction..."</p>
+                    <div>
+                        <p class="critic"> - Margaret M., Goodreads "#4 Best Reviewers</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$8.99</span> <span class="sale-text">On Sale for $3.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>LGBTQIA+</strong></p>
+            <br>
+                <img src="Fiction-LGBTQIA+.jpg" alt="The Atlas Six">
+            <div class="book-info">
+                <h3 class="book-title">The Atlas Six</h3>
+                <p>Author: Olivie Blake</p>
+                <hr>
+                <p class="critic-quote">"In this fantastical twist on dark academia, six magicians compete for membership in the powerful and prestigious Alexandrian Society. And if they have to make enemies out of their allies to get in, then so be it."</p>
+                    <div>
+                        <p class="critic"> - Lizz Schumer, Writer for Good Housekeeping</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>LITERARY FICTION</strong></p>
+            <br>
+                <img src="Fiction-literary-fiction.jpg" alt="To Kill a Mockingbird">
+            <div class="book-info">
+                <h3 class="book-title">To Kill a Mockingbird</h3>
+                <p>Author: Harper Lee</p>
+                <hr>
+                <p class="critic-quote">"To Kill a Mockingbird earned the Pulitzer Prize for fiction in 1961 and was made into an Academy Award-winning film in 1962, giving the story and its characters further life and influence over the American social sphere."</p>
+                    <div>
+                        <p class="critic"> - Jonathan Hogeback, Britannica writer</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>MYSTERY, THRILLER, SUSPENSE</strong></p>
+            <br>
+                <img src="Fiction-mystery-thriller-suspense.jpg" alt="Gone Girl">
+            <div class="book-info">
+                <h3 class="book-title">Gone Girl</h3>
+                <p>Author: Gillian Flynn</p>
+                <hr>
+                <p class="critic-quote">Pardon my French but "Gone Girl" by Gillian Flynn is a fucking masterpiece! Twist after twist after twist. You think the plot is going one way, and then it spits venom in your face, gives you a heart attack, and just for the hell of it, turns itself into a three-headed monster just to save face.</p>
+                    <div>
+                        <p class="critic"> - Theresa, Goodreads writer</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>ROMANCE</strong></p>
+            <br>
+                <img src="Fiction-romance.jpg" alt="Pride and Prejudice">
+            <div class="book-info">
+                <h3 class="book-title">Pride and Prejudice</h3>
+                <p>Author: Jane Austen</p>
+                <hr>
+                <p class="critic-quote">Arguably the greatest romance novel of all time, Austen's Pride and Prejudice follows the opinionated heroine, Elizabeth Bennet, as she frequently finds herself at odds with her beau, the uptight Mr. Darcy. </p>
+                    <div>
+                        <p class="critic"> - McKenzie Jean-Philippe, Oprah Daily</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>SCIENCE FICTION</strong></p>
+            <br>
+                <img src="Fiction-science-fiction.jpeg" alt="Dune">
+            <div class="book-info">
+                <h3 class="book-title">Dune</h3>
+                <p>Author: Frank Herbert</p>
+                <hr>
+                <p class="critic-quote">Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...</p>
+                    <div>
+                        <p class="critic"> - Goodreads</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>WESTERN</strong></p>
+            <br>
+                <img src="Fiction-western.jpg" alt="Shane">
+            <div class="book-info">
+                <h3 class="book-title">Shane</h3>
+                <p>Author: Jack Schaefer</p>
+                <hr>
+                <p class="critic-quote">"...considered by many the best Western novel of all-time...[t]he pure masculinity of the novel, and of Shane himself, is unrivaled in Western literature. If you aren’t stirred by this novel, you don’t have blood running through your veins.</p>
+                    <div>
+                        <p class="critic"> - Jeremy Anderberg, Writer for Art of Manliness</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>WOMEN'S FICTION</strong></p>
+            <br>
+                <img src="Fiction-womens-fiction.jpg" alt="A Little Life">
+            <div class="book-info">
+                <h3 class="book-title">A Little Life</h3>
+                <p>Author: Hanya Yanagihara</p>
+                <hr>
+                <p class="critic-quote">“Over the course of four decades, a group of friends share their joys and sorrows in Hanya Yanagihara’s stunning A Little Life. It’s a gruelling read at times as it covers some difficult subjects but it’s one of my favourite books of the last 10 years.”</p>
+                    <div>
+                        <p class="critic"> - Joanne Finney, Books Editor</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="book">
+            <p><strong>YOUNG ADULT</strong></p>
+            <br>
+                <img src="Fiction-young-adult.jpeg" alt="Little Women">
+            <div class="book-info">
+                <h3 class="book-title">Little Women</h3>
+                <p>Author: Louisa May Alcott</p>
+                <hr>
+                <p class="critic-quote">"Readers of all ages have fallen instantly in love with these Little Women. Their story transcends time—making this novel endure as a classic piece of American literature that has captivated generations of readers with their charm, innocence, and wistful insights."</p>
+                    <div>
+                        <p class="critic"> - Penguin Random House</p>
+                    </div>
+                    <br>
+                    <hr>
+                </p>
+                <p><span class="sale">$9.99</span> <span class="sale-text">On Sale for $5.99</span></p>
+            </div>
+            <button class="button">Add to Cart</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy 2023 Online Bookstore</p>
+    </footer>
+</body>
+</html>
